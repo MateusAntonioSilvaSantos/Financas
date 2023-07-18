@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+    <h1>Controle Financeiro</h1>
+
+  <label>
+    Descrição:
+    <input type="text" id="description">
+  </label>
+  <br>
+  <label>
+    Valor:
+    <input type="number" id="amount">
+  </label>
+  <br>
+  <label>
+    Tipo:
+    <select id="type">
+      <option value="expense">Despesa</option>
+      <option value="income">Receita</option>
+    </select>
+  </label>
+  <br>
+  <button onclick="addTransaction()">Adicionar Transação</button>
+
+  <h2>Transações</h2>
+  <ul id="transactions"></ul>
+
+  <h2>Saldo Atual: R$ <span id="balance">0.00</span></h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
